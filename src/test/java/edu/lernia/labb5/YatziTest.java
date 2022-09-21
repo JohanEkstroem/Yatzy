@@ -21,4 +21,9 @@ public class YatziTest {
         boolean result = yatzi.checkDices(dices);
         assertEquals(false, result);
     }
+
+    @Test
+    void populatedDicesArrayIsNotNull() {
+        assertNotNull(yatzi.getDicesValue()[0]);
+    }
 }
